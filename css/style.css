@@ -1,0 +1,181 @@
+html, body {
+  /*display: flex;*/
+  /* align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-top: 2%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 5%;
+  padding: 0px; */
+  height: 100%;
+  width: 100%;
+
+  background-color: #212121;
+  color: white;
+
+  background-image: url('../img/SquareEuropeBlack.png');
+  background-repeat: no-repeat;
+  background-position: 37%;
+  background-attachment: fixed;
+  background-size: 70%;
+
+  font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
+  /*font-family: "Times New Roman", Times, serif;*/
+}
+
+.Buttons{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  margin-top: 2%;
+  width: 30%;
+  vertical-align: top;
+  position: fixed;
+
+  display: inline-block;
+}
+
+.WholePage {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 40%;
+  margin-top: 1%;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 5%;
+  padding: 0px;
+
+  display: inline-block;
+}
+
+h1 {
+  text-align: center;
+  font-variant: small-caps;
+  color: #b71c1c;
+  /*color: #FC4445; #240090;*/
+}
+
+h2 {
+  /*text-decoration: underline;*/
+  text-align: center;
+  font-variant: small-caps;
+}
+h2.Profile {color: #f47f17 } /*#2E8364*/
+h2.Technologies {color: #2e7d32} /*#BC85A3*/
+h2.ToolsHeadline {color: #0288d1} /*#B16E4B*/
+h2.LanguagesHeadline {color: #9E6B55}
+h2.WorkExperience {color: #AB6393} /*#FA6E4F;*/
+h2.Education {color: #FA6E4F}
+
+h3 {
+  text-align: center;
+  margin-top: 0%;
+  color: #ECBE7A;
+}
+h3.EzpadaGroup {text-align: left;}
+
+
+p {
+  text-align: justify;
+}
+p.EzGrDescription {font-size: 80%}
+
+ul {text-align: justify;}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {color: #b71c1c;}
+
+.Header {
+  position: sticky;
+  z-index: 1 ;
+}
+
+.DtDComfort {
+  width: 50%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.ExperienceWith {
+  width: 50%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.Tools {
+  width: 50%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.Languages {
+  width: 50%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.Detail {font-size: 80%;}
+
+
+
+input {display: none;}
+
+input[type="checkbox"] ~ ul {
+  height: 0;
+  margin: 0;
+  transform: scaleY(0);
+}
+
+input[type="checkbox"]:checked ~ ul {
+  height: 100%;
+  transform-origin: top;
+  transition: transform .2s ease-out;
+  transform: scaleY(1);
+}
+
+input[type="checkbox"] ~ p {
+  height: 0;
+  margin: 0;
+  transform: scaleY(0);
+}
+
+input[type="checkbox"]:checked ~ p {
+  height: 100%;
+  transform-origin: top;
+  transition: transform .2s ease-out;
+  transform: scaleY(1);
+}
+
+input[type="button"] {
+  display: inline;
+  align-self: center;
+  align-items: center;
+  /* margin-bottom: 10%; */
+  height: 15%;
+  width: 36%;
+  margin-left: 15%;
+  margin-right: 49%;
+  margin-bottom: 1%;
+  padding: 0;
+
+  /* font-variant: small-caps; */
+
+  border-color: black;
+  border-style: solid; /*double;*/
+  border-radius: 1%;
+  border-width: medium;
+  color: black;
+  background-color: #212121;
+  font-family: inherit;
+  font-size: 120%;
+}
+
+input[type="button"].B1:hover {color: #FA6E4F;}
+input[type="button"].B2:hover {color: #0288d1;}
+input[type="button"].B3:hover {color: #f47f17;}

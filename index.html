@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Lubomir Skoupil</title>
+    <link rel='stylesheet' type='text/css' href='./css/style.css'>
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8">
+
+    <script type="text/javascript" src='./js/functions.js'></script>
+
+  </head>
+  <body>
+
+    <div class="Buttons">
+      <input type="button" class='B1' onclick='selectAll()' value="Show Details"/>
+      <input type="button" class='B2' onclick='UnSelectAll()' value="Hide Details"/>
+      <!-- <input type="button" class='B3' onclick='' value="CONTACT"/> -->
+    </div>
+
+    <div class='WholePage'>
+
+      <div class='Header'>
+        <h1>Lubomír Skoupil</h1>
+
+        <p>
+          Energy Markets Risk Manager, Analyst
+
+        </p>
+
+        <p>
+          <b>Keywords</b>: analytical, quantitative, energy markets, team player,
+          fundamental analysis and modelling, Python, SQL, VBA, VaR, PnL
+        </p>
+
+        <hr/>
+
+      </div>
+
+      <div class='Resume'>
+
+        <h2 class='Profile'>Profile</h2>
+        <p>
+          Data-driven professional with 5+ years of experience in the energy markets.
+          Spearheaded rework and automation of tools used by Ezpada group Risk
+          Management (implementation of hourly forward curves,
+          automated EoD marking, designed new PnL system, ...).
+          Looking for analytical position in energy markets to apply
+          outside-the-box thinking and coding enthusiasm. Available immediately.
+        </p>
+
+        <h2 class='Technologies'>Technologies</h2>
+
+        <div class='DtDComfort'>
+          <h3>Day-to-day comfort</h3>
+          <ul>
+            <li>
+              <input type="checkbox" id="TechPy" name='acs'>
+              <label for="TechPy" class="Python">Pyhton</label>
+                <p class='Detail'>
+                  Frequently used libraries: Pandas, NumPy, matplotlib, dash,
+                  BeautifulSoup, SQLalchemy, cxFreeze
+                </p>
+                <ul class='Detail'>
+                  <li>
+                    Fully automated marking of EoD prices based on real-time
+                    Trayport data (bids, offers, trades; illiquid markets marked
+                    based on spread)
+                  </li>
+                  <li>
+                    Stripping hourly, daily and monthly seasonality from power
+                    and gas spot data (over 20 grids; accounting for holidays)
+                  </li>
+                  <li>
+                    Automatic Bloomberg SFTP data download, cleaning and database
+                    insert (constructing Yield Curves from raw IR data)
+                  </li>
+                  <li>
+                    Graphical overview of power positions (hourly granularity)
+                  </li>
+                  <li>Many more tools ...</li>
+                </ul>
+            </li>
+            <li>
+              <input type="checkbox" id="TechSQL" name='acs'>
+              <label for="TechSQL" class="SQL">SQL</label>
+                <p class='Detail'>
+                  Used daily, often in combination with Python, VBA.
+                  Experience with SQLServer, MySQL, PostrgeSQL.
+                </p>
+                <ul class='Detail'>
+                  <li>Filtering prices, positions</li>
+                  <li>Ad hoc checks, calculations</li>
+                  <li>
+                    Created functions supplying VaR with clean price time series
+                  </li>
+                  <li>
+                    Multilayer check on deliverable positions including e-mails
+                    periodically sent from server to Risk and relevant traders
+                  </li>
+                  <li>Many more tools ...</li>
+                </ul>
+            </li>
+            <li>
+              <input type="checkbox" id="TechVBA" name='acs'>
+              <label for="TechVBA" class="VBA">VBA</label>
+                <p class='Detail'>
+                  Usually used as front end for Python (via cmd),
+                  SQL functions (daily interactive reports, checks).
+                </p>
+                <ul class='Detail'>
+                  <li>Trader performance review report</li>
+                  <li>
+                    Weekly Risk report for Management (details of PnL, VaR,
+                    credit risk, positions, cash liquidity)
+                  </li>
+                  <li>
+                    Trayport concluded deals overview (UI for filtering of all
+                    concluded deals)
+                  </li>
+                  <li>
+                    Cash Flow projection report - including detail of projected
+                    flows (day, counterpart, currency, entity)
+                  </li>
+                  <li>
+                    VaR prototype - historical, for linear positions, excluding
+                    prompt month positions. Later we implemented more
+                    complex VaR model
+                  </li>
+                  <li>Many more tools ...</li>
+                </ul>
+            </li>
+          </ul>
+        </div><div class="ExperienceWith">
+          <h3>Experience with</h3>
+          <ul>
+            <li>
+              <input type="checkbox" id="TechR" name='acs'>
+              <label for="TechR" class="R">R</label>
+                <p class='Detail'>
+                  Occasionally debugging legacy code.
+                </p>
+            </li>
+            <li>
+              <input type="checkbox" id="TechGit" name='acs'>
+              <label for="TechGit" class="Git">git</label>
+                <p class='Detail'>
+                  Using for a tool currently in the making. I need to study and
+                  use git more to be comfortable with it, but I love it so far.
+                </p>
+            </li>
+            <li>
+              <input type="checkbox" id="TechHTML" name='acs'>
+              <label for="TechHTML" class="HTMLCSS">HTML / CSS</label>
+                <p class='Detail'>
+                  This site. Occasionally tinkering with legacy code.
+                </p>
+            </li>
+            <li>
+              <input type="checkbox" id="TechLinux" name='acs'>
+              <label for="TechLinux" class="Linux">Linux (Ubuntu)</label>
+                <p class='Detail'>Casual desktop user.</p>
+            </li>
+            <li>
+              <input type="checkbox" id="TechBBG" name='acs'>
+              <label for="TechBBG" class="BBG">Bloomberg terminal</label>
+                <p class='Detail'>
+                  Using several terminal and Excel mod functions
+                  on daily basis for about two years. Enjoyed it immensely.
+                </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="Tools">
+          <h2 class='ToolsHeadline'>Tools</h2>
+          <ul>
+            <li>Profit and Loss (PnL)</li>
+            <li>Value at Risk (VaR)</li>
+            <li>Stress testing</li>
+            <li>Forward curves</li>
+            <li>Cash Flow projections</li>
+            <li>EoD automatic marking</li>
+          </ul>
+        </div><div class="Languages">
+          <h2 class='LanguagesHeadline'>Languages</h2>
+          <ul>
+            <li>English - fluent</li>
+            <li>German - intermediate</li>
+            <li>Czech - native speaker</li>
+          </ul>
+        </div>
+
+        <hr/>
+
+        <h2 class='WorkExperience'>Work Experience</h2>
+        <h3 class='EzpadaGroup'>
+          <a href='https://www.ezpada.com/'>
+            Ezpada Group</a>* (2012 - 2018)
+        </h3>
+        <ul>
+          <li>
+            <input type="checkbox" id="WorkExpSnr" name='acs'>
+            <label for="WorkExpSnr" class="SnrRsk">
+              Senior Risk Analyst (2014 - 2018)
+            </label>
+              <p class='Detail'>
+                Promoted to lead the operational side of Risk department (3-6
+                risk professionals) less than two years into my career thanks to
+                my good relationship with IT and Trading departments and to high
+                level of my own initiative (was able to finish multiple projects
+                singlehanded).
+              </p>
+              <ul class='Detail'>
+                <li>
+                  Ownership of multiple major projects inside group middle
+                  office (automation of processes, implementation of risk/profit
+                  measures, …)
+                </li>
+                <li>
+                  Analysing and commenting on risk measures and performance
+                </li>
+                <li>
+                  Developing, improving, validating, maintaining and monitoring
+                  PnL, VaR, Positions, Cash Flow models, tools and reports
+                </li>
+                <li>
+                  Business analysis for Risk and Trading tools and processes,
+                  cooperating with IT. <i>Example: owner of full implementation
+                  (risk metrics, reconciliation, automatic real-time deal
+                  download, deal entry, position overview, …) of new products
+                  into Ezpada custom ETRM system</i>
+                </li>
+                <li>
+                  Ad hoc analysis (liquidity, new products, strategies, business
+                  ideas, limit proposals, …)
+                </li>
+                <li>
+                  Leading, mentoring small team (3-6) of Risk specialists
+                </li>
+                <li>
+                  Deputy of Head of Group Risk
+                </li>
+              </ul>
+          </li>
+          <li>
+            <input type="checkbox" id="WorkExpCred" name='acs'>
+            <label for="WorkExpCred" class="CredRsk">
+              Credit Risk Analyst (2012 - 2014)
+            </label>
+              <ul class='Detail'>
+                <li>
+                  Monitoring exposure and limits of OTC trading partners (over
+                  100 active counterparts)
+                </li>
+                <li>
+                  Negotiating EFET, ISDA, CSA contracts
+                </li>
+                <li>
+                  Improving the monitoring system
+                </li>
+              </ul>
+          </li>
+        </ul>
+
+        <p class='EzGrDescription'>
+          *<b>Ezpada Group</b>: Approximately 30 traders dealing with physical +
+           financial power (one of the biggest players on EEX, NordPool, HUPX;
+           trading almost every grid between Spain, Turkey and Nordpool), emissions,
+          gas, coal, oil and refined products, agricultural products, metals.
+        </p>
+        <p>
+          Although I enjoyed working for Ezpada I quit in Aug18 to travel,
+          clear my head and seek opportunities to experience the energy markets
+          also from a different perspective.
+        </p>
+
+        <h2 class='Education'>Education</h2>
+        <p>
+          <b>MSc Finance</b>, minor: Macroeconomic Analysis (2007 - 2012) <br/>
+          <a href=
+           'https://ffu.vse.cz/english/departments/monetary-theory-and-policy/'>
+            University of Economics in Prague
+          </a>
+        </p>
+
+
+      </div>
+
+    </div>
+  </body>
+
+
+</html>
