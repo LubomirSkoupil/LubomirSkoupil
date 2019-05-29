@@ -41,10 +41,10 @@
         <p>
           Data-driven professional with 5+ years of experience in the energy markets.
           Spearheaded rework and automation of tools used by Ezpada group Risk
-          Management (implementation of hourly forward curves,
-          automated EoD marking, designed new PnL system, ...).
-          Looking for analytical position in energy markets to apply
-          outside-the-box thinking and coding enthusiasm. Available immediately.
+          Management (implementation of hourly forward curves, automated EoD
+          marking, designed new PnL system, ...). Looking for analytical position
+          in energy markets to apply outside-the-box thinking and coding enthusiasm.
+          Relocation assistance is not required. Available immediately.
         </p>
 
         <h2 class='Technologies'>Technologies</h2>
@@ -173,10 +173,73 @@
         <div class="Tools">
           <h2 class='ToolsHeadline'>Tools</h2>
           <ul>
-            <li>Profit and Loss (PnL)</li>
+            <li>
+              <input type="checkbox" id="ToolsPnL" name='acs'>
+              <label for="ToolsPnL" class="PnL">Profit and Loss (PnL)</label>
+                <p class='Detail'>
+                  Stable and precise PnL is at the heart of front office and
+                  middle office processes and controls. During my time at Ezpada
+                  I had the opportunity to work on several concepts of various
+                  types of PnL including energy products (standard profiles,
+                  shapes, transmission rights, multicurrency portfolios), FX and
+                  standardized exchange-traded commodity contracs.
+                </p>
+                <p class='Detail'>
+                  In 2015 I designed significant part of the PnL system Ezpada
+                  uses to this day - the system was built on reliable forward
+                  curves (one curve per grid, hourly granularity for power and
+                  gas), PnL calculated on position rather than individual tickets
+                  and on Total-to-Day PnL differences.
+                </p>
+                <p class='Detail'>
+                  In paralell to the official PnL implemented by IT I created
+                  several SQL and Python tools helping us explain and troubleshoot
+                  the official PnL (<i>for example tool showing traders positions
+                  carried from one day to another and detail of PnL the positions
+                  generated between these days</i>).
+                </p>
+            </li>
             <li>Value at Risk (VaR)</li>
             <li>Stress testing</li>
-            <li>Forward curves</li>
+            <li>
+              <input type="checkbox" id="ToolsFWC" name='acs'>
+              <label for="ToolsFWC" class="FWC">Forward curves</label>
+                <p class='Detail'>
+                  Reliable forward curves (FWC) with hourly granularity are a
+                  must-have for a well performing PnL and other Risk processes
+                  (credit, volatility and correlation estimation and modelling,
+                  cash flow projections).
+                </p>
+                <p class='Detail'>
+                  I cooperated with IT on implementation of FWC for power and
+                  gas grids and I introduced several stabilizing concepts into
+                  the algorithm:
+                </p>
+                <ul class='Detail'>
+                  <li>
+                    price source prioritization (<i>for example "CZ: Trayport >
+                    PXE > brokers"; this way if Trayport marking fails and PXE
+                    does not publish prices, broker marks would be used for
+                    calculation and only small adjustment, if any, will be
+                    needed</i>)
+                  </li>
+                  <li>
+                    discarding the least liquid product prices in case of conflict
+                    (in March there will sometimes be quotes for Q2, Apr, May and
+                    June contracts, where the weighted average of monthly quotes
+                    does not equal quote for Q2, which creates confusion; this
+                    gest solved by disregarding the least liquid product quote -
+                    in this instance June)
+                  </li>
+                  <li>
+                    including seasonality: this increases precision of the curves
+                    as it decreases valuation jumps for products that are becomming
+                    more liquid
+                  </li>
+                </ul>
+
+                </p>
+            </li>
             <li>Cash Flow projections</li>
             <li>EoD automatic marking</li>
           </ul>
