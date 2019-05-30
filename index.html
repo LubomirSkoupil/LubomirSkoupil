@@ -23,7 +23,6 @@
 
         <p>
           Energy Markets Risk Manager, Analyst
-
         </p>
 
         <p>
@@ -182,7 +181,7 @@
                   I had the opportunity to work on several concepts of various
                   types of PnL including energy products (standard profiles,
                   shapes, transmission rights, multicurrency portfolios), FX and
-                  standardized exchange-traded commodity contracs.
+                  standardized exchange-traded commodity contracts.
                 </p>
                 <p class='Detail'>
                   In 2015 I designed significant part of the PnL system Ezpada
@@ -192,7 +191,7 @@
                   and on Total-to-Day PnL differences.
                 </p>
                 <p class='Detail'>
-                  In paralell to the official PnL implemented by IT I created
+                  In parallel to the official PnL implemented by IT I created
                   several SQL and Python tools helping us explain and troubleshoot
                   the official PnL (<i>for example tool showing traders positions
                   carried from one day to another and detail of PnL the positions
@@ -233,15 +232,34 @@
                   </li>
                   <li>
                     including seasonality: this increases precision of the curves
-                    as it decreases valuation jumps for products that are becomming
+                    as it decreases valuation jumps for products that are becoming
                     more liquid
                   </li>
                 </ul>
-
-                </p>
             </li>
             <li>Cash Flow projections</li>
-            <li>EoD automatic marking</li>
+            <li>
+              <input type="checkbox" id="ToolsMarking" name='acs'>
+              <label for="ToolsMarking" class="Marking">EoD automatic marking</label>
+                <p class='Detail'>
+                  There are many illiquid products in the energy markets and for
+                  these products it is often hard to get an external mark. In
+                  addition to this, various forms of energy products are traded
+                  in spreads (especially location and time spreads are widely
+                  popular). It is also often the case that external sources mark at
+                  different times (EEX at 16:15, some brokers at 17:00, ...).
+                </p>
+                <p class='Detail'>
+                  To avoid these problems, I developed and implemented an
+                  algorithm marking automatically based on real-time Trayport
+                  data (bids, offers, concluded trades on outright products).
+                  The algorith alowed for marking on spread - the "trailing"
+                  market would follow the "base" market unless the trailing
+                  mark would get outside of the best bid / offer range of the
+                  trailing product, in which case the marked spread would either
+                  widen or narrow.
+                </p>
+            </li>
           </ul>
         </div><div class="Languages">
           <h2 class='LanguagesHeadline'>Languages</h2>
@@ -267,10 +285,10 @@
             </label>
               <p class='Detail'>
                 Promoted to lead the operational side of Risk department (3-6
-                risk professionals) less than two years into my career thanks to
+                Risk specialists) less than two years into my career thanks to
                 my good relationship with IT and Trading departments and to high
                 level of my own initiative (was able to finish multiple projects
-                singlehanded).
+                single-handedly) and hard work.
               </p>
               <ul class='Detail'>
                 <li>
@@ -293,6 +311,10 @@
                   into Ezpada custom ETRM system</i>
                 </li>
                 <li>
+                  Communicationg with clearing banks, brokers, DMA providers,
+                  exchanges, trading counterparts
+                </li>
+                <li>
                   Ad hoc analysis (liquidity, new products, strategies, business
                   ideas, limit proposals, …)
                 </li>
@@ -303,6 +325,10 @@
                   Deputy of Head of Group Risk
                 </li>
               </ul>
+              <p class='Detail'>
+                References: Igor Paholok (Risk), Chad Tschudi (Trading),
+                Lyubomir Gunev (IT)
+              </p>
           </li>
           <li>
             <input type="checkbox" id="WorkExpCred" name='acs'>
