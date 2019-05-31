@@ -9,18 +9,42 @@
     <meta http-equiv="Content-type" content="text/html;charset=utf-8">
 
     <script type="text/javascript" src='./js/functions.js'></script>
-
   </head>
   <body>
 
     <div class="Buttons">
       <input type="button" class='B1' onclick='selectAll()' value="Show Details"/>
       <input type="button" class='B2' onclick='UnSelectAll()' value="Hide Details"/>
-      <!-- <input type="button" class='B3' onclick='' value="CONTACT"/> -->
+
+      <div class="Contact">
+        <form method="POST" id='contactform'>
+          <script>SetAddress();</script>
+          <input type="text" name="_gotcha" style="display:none" />
+          <input type='hidden' name='_subject' value='Website contact'/>
+          <input type="text" name="ContactMe">
+          <textarea name="comments" placeholder='Contact me (add your own contact details if relevant)'></textarea>
+          <input type="submit" value="Send">
+        </form>
+      </div>
+
+      <noscript>
+        <p>
+          Warning: without <b>JavaScript</b> enabled, the buttons will not work.
+          There is detailed info hidden under most of the points (orange on hover)
+          - it is possible to see the details only by clicking on these points
+          manually. The Contact script won't work either.
+        </p>
+
+      </noscript>
+
+      <div class = 'CreatedBy'>
+        created by Lubomir Skoupil (2019)
+      </div>
+
     </div>
 
-    <div class='WholePage'>
 
+    <div class='WholePage'>
       <div class='Header'>
         <h1>Lubomír Skoupil</h1>
 
@@ -56,7 +80,7 @@
           <ul>
             <li>
               <input type="checkbox" id="TechPy" name='acs'>
-              <label for="TechPy" class="Python">Pyhton</label>
+              <label for="TechPy" class="Python">Python</label>
                 <p class='Detail'>
                   Frequently used libraries: Pandas, NumPy, matplotlib, dash,
                   BeautifulSoup, SQLalchemy, cxFreeze
@@ -103,7 +127,7 @@
             </li>
             <li>
               <input type="checkbox" id="TechVBA" name='acs'>
-              <label for="TechVBA" class="VBA">VBA</label>
+              <label for="TechVBA" class="VBA">VBA (+ Excel functions)</label>
                 <p class='Detail'>
                   Usually used as front end for Python (via cmd),
                   SQL functions (daily interactive reports, checks).
@@ -153,7 +177,8 @@
               <input type="checkbox" id="TechHTML" name='acs'>
               <label for="TechHTML" class="HTMLCSS">HTML / CSS</label>
                 <p class='Detail'>
-                  This site. Occasionally tinkering with legacy code.
+                  This site (created from the scratch). Occasionally tinkering
+                  with legacy code.
                 </p>
             </li>
             <li>
@@ -202,7 +227,6 @@
                 </p>
             </li>
             <li>Value at Risk (VaR)</li>
-            <li>Stress testing</li>
             <li>
               <input type="checkbox" id="ToolsFWC" name='acs'>
               <label for="ToolsFWC" class="FWC">Forward curves</label>
@@ -214,7 +238,7 @@
                 </p>
                 <p class='Detail'>
                   I cooperated with IT on implementation of FWC for power and
-                  gas grids and I introduced several stabilizing concepts into
+                  gas grids and introduced several stabilizing concepts into
                   the algorithm:
                 </p>
                 <ul class='Detail'>
@@ -373,7 +397,6 @@
             University of Economics in Prague
           </a>
         </p>
-
 
       </div>
 

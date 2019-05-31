@@ -37,6 +37,14 @@ html, body {
   display: inline-block;
 }
 
+
+.CreatedBy {
+  font-size: 50%;
+  color: gray;
+  bottom: 0;
+  position: fixed;
+}
+
 .WholePage {
   align-items: center;
   justify-content: center;
@@ -89,7 +97,14 @@ a {
   text-decoration: none;
   color: inherit;
 }
-a:hover {color: #b71c1c;}
+a:hover {color: #008991;} /*#b71c1c*/
+
+noscript {
+  color: #b71c1c;
+  font-size: 80%;
+  text-align: justify;
+  width: 80%;
+}
 
 .Header {
   position: sticky;
@@ -126,6 +141,8 @@ a:hover {color: #b71c1c;}
 
 input {display: none;}
 
+label:hover {color:#ff4000;}
+
 input[type="checkbox"] ~ ul {
   height: 0;
   margin: 0;
@@ -152,15 +169,17 @@ input[type="checkbox"]:checked ~ p {
   transform: scaleY(1);
 }
 
-input[type="button"] {
+input[type="checkbox"]:checked ~ label {color: #ff4000;}
+
+input[type="button"], input[type="submit"] {
   display: inline;
   align-self: center;
   align-items: center;
   /* margin-bottom: 10%; */
   height: 15%;
-  width: 36%;
+  width: 46%;
   margin-left: 15%;
-  margin-right: 49%;
+  margin-right: 39%;
   margin-bottom: 1%;
   padding: 0;
 
@@ -176,6 +195,36 @@ input[type="button"] {
   font-size: 120%;
 }
 
-input[type="button"].B1:hover {color: #FA6E4F;}
-input[type="button"].B2:hover {color: #0288d1;}
+input[type="button"].B1:hover {color: #ff4000;} /*#FA6E4F*/
+input[type="button"].B2:hover {color: white;}
 input[type="button"].B3:hover {color: #f47f17;}
+
+
+ textarea {
+  display: inline;
+  align-self: center;
+  align-items: center;
+  height: 40vh;
+  width: 45%;
+  margin-left: 15%;
+  margin-right: 39%;
+  margin-bottom: 1%;
+  padding: 0;
+
+  resize: none;
+  color: gray;
+  font-size: 100%;
+
+  border-color: black;
+  border-style: solid; /*double;*/
+  border-radius: 1%;
+  border-width: medium;
+  color: black;
+  background-color: #212121;
+  font-family: inherit;
+}
+
+::placeholder {
+  color: black;
+  text-align: justify;
+}
