@@ -197,7 +197,7 @@ input[type="button"], input[type="submit"] {
 
 input[type="button"].B1:hover {color: #ff4000;} /*#FA6E4F*/
 input[type="button"].B2:hover {color: white;}
-input[type="button"].B3:hover {color: #f47f17;}
+input[type="submit"]:hover {color: #2e7d32;}
 
 
  textarea {

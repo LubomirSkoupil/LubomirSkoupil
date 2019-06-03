@@ -21,7 +21,6 @@
           <script>SetAddress();</script>
           <input type="text" name="_gotcha" style="display:none" />
           <input type='hidden' name='_subject' value='Website contact'/>
-          <input type="text" name="ContactMe">
           <textarea name="comments" placeholder='Contact me (add your own contact details if relevant)'></textarea>
           <input type="submit" value="Send">
         </form>
@@ -34,7 +33,6 @@
           - it is possible to see the details only by clicking on these points
           manually. The Contact script won't work either.
         </p>
-
       </noscript>
 
       <div class = 'CreatedBy'>
@@ -66,9 +64,9 @@
         <h2 class='Profile'>Profile</h2>
         <p>
           Data-driven professional with 5+ years of experience in the energy markets.
-          Spearheaded rework and automation of tools used by Ezpada group Risk
+          Spearheaded rework and automation of tools and models used by Ezpada group Risk
           Management (implementation of hourly forward curves, automated EoD
-          marking, designed new PnL system, ...). Looking for analytical position
+          marking, designed new PnL system, ...). Looking for an analytical position
           in energy markets to apply outside-the-box thinking and coding enthusiasm.
           Relocation assistance is not required. Available immediately.
         </p>
@@ -148,7 +146,7 @@
                   </li>
                   <li>
                     VaR prototype - historical, for linear positions, excluding
-                    prompt month positions. Later we implemented more
+                    current month positions. Later we implemented more
                     complex VaR model
                   </li>
                   <li>Many more tools ...</li>
@@ -226,7 +224,29 @@
                   generated between these days</i>).
                 </p>
             </li>
-            <li>Value at Risk (VaR)</li>
+            <li>
+              <input type="checkbox" id="ToolsVaR" name='acs'>
+              <label for="ToolsVaR" class="VaR">Value at Risk (VaR)</label>
+                <p class='Detail'>
+                  Despite its many problems VaR enables Risk Managers and
+                  Management to see the riskiness of the portfolio condensed
+                  into a single figure, that can be easily interpreted even by
+                  non-technical users.
+                </p>
+                <p class='Detail'>
+                  In Ezpada I created one simple VaR model (historical, linear
+                  positions only, excluding current month positions) and later I
+                  cooperated on creating (supplying most of the SQL functions for
+                  positions and prices) and design of much more complex VaR model
+                  (Monte Carlo, volatility weighted, all positions from Day Ahead,
+                  including option portfolio).
+                </p>
+                <p class='Detail'>
+                  I also have a lot of experience of reconciliating the VaR model
+                  results with Trading's expectations and helping Trading keep
+                  their exposure within the defined set of limits.
+                </p>
+            </li>
             <li>
               <input type="checkbox" id="ToolsFWC" name='acs'>
               <label for="ToolsFWC" class="FWC">Forward curves</label>
@@ -243,7 +263,7 @@
                 </p>
                 <ul class='Detail'>
                   <li>
-                    price source prioritization (<i>for example "CZ: Trayport >
+                    price source prioritization (<i>example: "CZ: Trayport >
                     PXE > brokers"; this way if Trayport marking fails and PXE
                     does not publish prices, broker marks would be used for
                     calculation and only small adjustment, if any, will be
@@ -264,23 +284,47 @@
                   </li>
                 </ul>
             </li>
-            <li>Cash Flow projections</li>
+            <li>
+              <input type="checkbox" id="ToolsCF" name='acs'>
+              <label for="ToolsCF" class="CF">Cash Flow projections</label>
+              <p class='Detail'>
+                Cash Flow projection is an important tool, especially for small
+                companies trading with commodities with physical delivery - seeing
+                potential problems well ahead of time gives Treasury and Risk
+                departments enough flexibility to deal with the issues without
+                unnecessary stress and cost.
+              </p>
+              <p class='Detail'>
+                I created a Cash Flow report including projections of payments for
+                commodities with physical and financial delivery (OTC and exchanges)
+                and payments of taxes and fees that are settled periodically.
+              </p>
+            </li>
             <li>
               <input type="checkbox" id="ToolsMarking" name='acs'>
               <label for="ToolsMarking" class="Marking">EoD automatic marking</label>
                 <p class='Detail'>
-                  There are many illiquid products in the energy markets and for
-                  these products it is often hard to get an external mark. In
-                  addition to this, various forms of energy products are traded
-                  in spreads (especially location and time spreads are widely
-                  popular). It is also often the case that external sources mark at
-                  different times (EEX at 16:15, some brokers at 17:00, ...).
+                There are many problems with marking on energy markets:
                 </p>
+                <ul class='Detail'>
+                  <li>
+                    illiquid products
+                  </li>
+                  <li>
+                    energy is heavily traded in spreads - especially location and
+                    time spreads are widely popular
+                  </li>
+                  <li>
+                    external sources often mark at different times causing high
+                    volatility of PnL and exaggerated VaR in portfolios including
+                    products marked based on different sources
+                  </li>
+                </ul>
                 <p class='Detail'>
                   To avoid these problems, I developed and implemented an
                   algorithm marking automatically based on real-time Trayport
                   data (bids, offers, concluded trades on outright products).
-                  The algorith alowed for marking on spread - the "trailing"
+                  The algorithm allowed for marking on spread - the "trailing"
                   market would follow the "base" market unless the trailing
                   mark would get outside of the best bid / offer range of the
                   trailing product, in which case the marked spread would either
@@ -315,7 +359,7 @@
                 Risk specialists) less than two years into my career thanks to
                 my good relationship with IT and Trading departments and to high
                 level of my own initiative (was able to finish multiple projects
-                single-handedly) and hard work.
+                single-handedly).
               </p>
               <ul class='Detail'>
                 <li>
@@ -324,7 +368,7 @@
                   measures, …)
                 </li>
                 <li>
-                  Analysing and commenting on risk measures and performance
+                  Analyzing and commenting on risk measures and performance
                 </li>
                 <li>
                   Developing, improving, validating, maintaining and monitoring
@@ -338,7 +382,7 @@
                   into Ezpada custom ETRM system</i>
                 </li>
                 <li>
-                  Communicationg with clearing banks, brokers, DMA providers,
+                  Communicating with clearing banks, brokers, DMA providers,
                   exchanges, trading counterparts
                 </li>
                 <li>
