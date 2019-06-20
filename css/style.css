@@ -21,7 +21,6 @@ html, body {
   background-size: 70%;
 
   font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
-  /*font-family: "Times New Roman", Times, serif;*/
 }
 
 .Buttons{
@@ -72,16 +71,17 @@ h2 {
   font-variant: small-caps;
 }
 h2.Profile {color: #f47f17 } /*#2E8364*/
-h2.Technologies {color: #2e7d32} /*#BC85A3*/
+h2.Technologies {color: #2e7d32} /*#BC85A3 */
 h2.ToolsHeadline {color: #0288d1} /*#B16E4B*/
 h2.LanguagesHeadline {color: #9E6B55}
+h2.PortfolioHeadline {color: #E15D44}
 h2.WorkExperience {color: #AB6393} /*#FA6E4F;*/
-h2.Education {color: #FA6E4F}
+h2.Education {color: #29AB87} /*#EFC050*/
 
 h3 {
   text-align: center;
   margin-top: 0%;
-  color: #ECBE7A;
+  color: #ECBE7A; /*#D65076 #ECBE7A*/
 }
 h3.EzpadaGroup {text-align: left;}
 
@@ -130,6 +130,18 @@ noscript {
 }
 
 .Languages {
+  width: 50%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.PortfolioLeft {
+  width: 50%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.PortfolioRight {
   width: 50%;
   vertical-align: top;
   display: inline-block;
