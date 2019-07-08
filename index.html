@@ -66,9 +66,7 @@
           Data-driven professional with 5+ years of experience in the energy markets.
           Spearheaded rework and automation of tools and models used by Ezpada group Risk
           Management (implementation of hourly forward curves, automated EoD
-          marking, designed new PnL system, ...). Looking for an analytical position
-          in energy markets to apply outside-the-box thinking and coding enthusiasm.
-          Available immediately.
+          marking, designed new PnL system, ...).
         </p>
 
         <h2 class='Technologies'>Technologies</h2>
@@ -200,8 +198,8 @@
           <ul>
             <li>
               <input type="checkbox" id="ToolsPnL" name='acs'>
-              <label for="ToolsPnL" class="PnL">Profit and Loss (PnL)</label>
-                <p class='Detail'>
+              <label for="ToolsPnL" class="Hidden">Profit and Loss (PnL)</label>
+                <p class='DetailHidden'>
                   Stable and precise PnL is at the heart of front office and
                   middle office processes and controls. During my time at Ezpada
                   I had the opportunity to work on several concepts of various
@@ -209,14 +207,14 @@
                   shapes, transmission rights, multicurrency portfolios), FX and
                   standardized exchange-traded commodity contracts.
                 </p>
-                <p class='Detail'>
+                <p class='DetailHidden'>
                   In 2015 I designed significant part of the PnL system Ezpada
                   uses to this day - the system was built on reliable forward
                   curves (one curve per grid, hourly granularity for power and
                   gas), PnL calculated on position rather than individual tickets
                   and on Total-to-Day PnL differences.
                 </p>
-                <p class='Detail'>
+                <p class='DetailHidden'>
                   In parallel to the official PnL implemented by IT I created
                   several SQL and Python tools helping us explain and troubleshoot
                   the official PnL (<i>for example tool showing traders positions
@@ -226,14 +224,14 @@
             </li>
             <li>
               <input type="checkbox" id="ToolsVaR" name='acs'>
-              <label for="ToolsVaR" class="VaR">Value at Risk (VaR)</label>
-                <p class='Detail'>
+              <label for="ToolsVaR" class="Hidden">Value at Risk (VaR)</label>
+                <p class='DetailHidden'>
                   Despite its many problems VaR enables Risk Managers and
                   Management to see the riskiness of the portfolio condensed
                   into a single figure, that can be easily interpreted even by
                   non-technical users.
                 </p>
-                <p class='Detail'>
+                <p class='DetailHidden'>
                   In Ezpada I created one simple VaR model (historical, linear
                   positions only, excluding current month positions) and later I
                   cooperated on creating (supplying most of the SQL functions for
@@ -241,7 +239,7 @@
                   (Monte Carlo, volatility weighted, all positions from Day Ahead,
                   including option portfolio).
                 </p>
-                <p class='Detail'>
+                <p class='DetailHidden'>
                   I also have a lot of experience of reconciling the VaR model
                   results with Trading's expectations and helping Trading keep
                   their exposure within the defined set of limits.
@@ -249,19 +247,19 @@
             </li>
             <li>
               <input type="checkbox" id="ToolsFWC" name='acs'>
-              <label for="ToolsFWC" class="FWC">Forward curves</label>
-                <p class='Detail'>
+              <label for="ToolsFWC" class="Hidden">Forward curves</label>
+                <p class='DetailHidden'>
                   Reliable forward curves (FWC) with hourly granularity are a
                   must-have for a well performing PnL and other Risk processes
                   (credit, volatility and correlation estimation and modelling,
                   cash flow projections).
                 </p>
-                <p class='Detail'>
+                <p class='DetailHidden'>
                   I cooperated with IT on implementation of FWC for power and
                   gas grids and introduced several stabilizing concepts into
                   the algorithm:
                 </p>
-                <ul class='Detail'>
+                <ul class='DetailHidden'>
                   <li>
                     price source prioritization (<i>example: "CZ: Trayport >
                     PXE > brokers"; this way if Trayport marking fails and PXE
@@ -286,15 +284,15 @@
             </li>
             <li>
               <input type="checkbox" id="ToolsCF" name='acs'>
-              <label for="ToolsCF" class="CF">Cash Flow projections</label>
-              <p class='Detail'>
+              <label for="ToolsCF" class="Hidden">Cash Flow projections</label>
+              <p class='DetailHidden'>
                 Cash Flow projection is an important tool, especially for small
                 companies trading with commodities with physical delivery - seeing
                 potential problems well ahead of time gives Treasury and Risk
                 departments enough flexibility to deal with the issues without
                 unnecessary stress and cost.
               </p>
-              <p class='Detail'>
+              <p class='DetailHidden'>
                 I created a Cash Flow report including projections of payments for
                 commodities with physical and financial delivery (OTC and exchanges)
                 and payments of taxes and fees that are settled periodically.
@@ -302,11 +300,11 @@
             </li>
             <li>
               <input type="checkbox" id="ToolsMarking" name='acs'>
-              <label for="ToolsMarking" class="Marking">EoD automatic marking</label>
-                <p class='Detail'>
+              <label for="ToolsMarking" class="Hidden">EoD automatic marking</label>
+                <p class='DetailHidden'>
                 There are many problems with marking on energy markets:
                 </p>
-                <ul class='Detail'>
+                <ul class='DetailHidden'>
                   <li>
                     illiquid products
                   </li>
@@ -320,7 +318,7 @@
                     products marked based on different sources
                   </li>
                 </ul>
-                <p class='Detail'>
+                <p class='DetailHidden'>
                   To avoid these problems, I developed and implemented an
                   algorithm marking automatically based on real-time Trayport
                   data (bids, offers, concluded trades on outright products).

@@ -148,12 +148,13 @@ noscript {
 }
 
 .Detail {font-size: 80%;}
-
+.DetailHidden {display: none}
 
 
 input {display: none;}
 
 label:hover {color:#ff4000;}
+label.Hidden:hover {color:white;}
 
 input[type="checkbox"] ~ ul {
   height: 0;
@@ -182,6 +183,7 @@ input[type="checkbox"]:checked ~ p {
 }
 
 input[type="checkbox"]:checked ~ label {color: #ff4000;}
+input[type="checkbox"]:checked ~ label.Hidden {color: white;}
 
 input[type="button"], input[type="submit"] {
   display: inline;
